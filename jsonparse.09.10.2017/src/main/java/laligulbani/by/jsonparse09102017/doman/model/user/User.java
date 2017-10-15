@@ -6,6 +6,5 @@ public interface User {
 
     String getName();
 
-    String getAvatar();
-
+    String getEmail();
 }

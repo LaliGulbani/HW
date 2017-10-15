@@ -9,14 +9,11 @@ import laligulbani.by.jsonparse09102017.doman.model.user.User;
 
 public class GsonUser implements User {
 
-    @SerializedName("avatar")
-    private String mAvatar;
+
     @SerializedName("id")
-    private long mId;
+    private long Id;
     @SerializedName("name")
-    private String mName;
-    @SerializedName("_id")
-    private String _id;
+    private String Name;
     @SerializedName("index")
     private String index;
     @SerializedName("guid")
@@ -60,33 +57,17 @@ public class GsonUser implements User {
 
     @Override
     public long getId() {
-        return mId;
+        return Id;
     }
 
     @Override
     public String getName() {
-        return mName;
+        return Name;
     }
 
     @Override
-    public String getAvatar() {
-        return mAvatar;
-    }
-
-    public String getmAvatar() {
-        return mAvatar;
-    }
-
-    public long getmId() {
-        return mId;
-    }
-
-    public String getmName() {
-        return mName;
-    }
-
-    public String get_id() {
-        return _id;
+    public String getEmail() {
+        return email;
     }
 
     public String getIndex() {
@@ -125,10 +106,6 @@ public class GsonUser implements User {
         return company;
     }
 
-    public String getEmail() {
-        return email;
-    }
-
     public String getPhone() {
         return phone;
     }
@@ -143,7 +120,7 @@ public class GsonUser implements User {
 
     public Date getRegistered() {
         long l = Long.parseLong(registered);
-        return new java.util.Date(l *1000);
+        return new java.util.Date(l * 1000);
     }
 
     public String getLatitude() {

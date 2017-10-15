@@ -28,7 +28,6 @@ public class JsonParserTest extends ParserTest {
 
         assertEquals(EXPECTED_ID, user.getId());
         assertEquals(EXPECTED_NAME, user.getName());
-        assertEquals(EXPECTED_AVATAR, user.getAvatar());
     }
 
     @Test
